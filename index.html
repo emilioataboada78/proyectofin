@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Sahumerios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Encens</h1>
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="producto" data-nombre="Sahumerio Artesanal x 10" data-precio="1200">
+        <img src="https://d22fxaf9t8d39k.cloudfront.net/5f8647285a2029668214f79e2db3979ca6bf11519a8d1e15e0c28d7daff7b3e078302.png" alt="Sahumerio artesanal">
+        <h3>Sahumerio Artesanal</h3>
+        <p>Precio: $1200</p>
+        <button class="btn-comprar">Añadir al Carrito</button>
+      </div>
+      <div class="producto" data-nombre="Portasahumerio de Madera" data-precio="2100">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2X-H051zJO6urIW13-3BRpCM4YcFXncVSxw&s" alt="Portasahumerio de madera">
+        <h3>Portasahumerio de Madera</h3>
+        <p>Precio: $2100</p>
+        <button class="btn-comprar">Añadir al Carrito</button>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una tienda especializada en productos artesanales. Existen aromas que atraen bellos recuerdos.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="form-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p>Total: $<span id="total-carrito">0</span></p>
+      <button id="finalizar-compra">Finalizar Compra</button>
+    </section>
+  </main>
+
+  <footer>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
